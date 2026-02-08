@@ -38,7 +38,7 @@ func main() {
 		Models: data.New(conn),
 	}
 
-	log.Printf("Starting broker service on port %s\n", webPort)
+	log.Printf("Starting authentication service on port %s\n", webPort)
 
 	//define http server
 	srv := &http.Server{
