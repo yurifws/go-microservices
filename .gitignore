@@ -15,10 +15,12 @@ pkg/
 go.work
 
 # Service binaries
+loggerServiceApp
 brokerApp
 authApp
 frontApp.exe
 authentication-service/authApp
+logger-service/loggerServiceApp
 broker-service/brokerApp
 front-end/frontApp.exe
 
