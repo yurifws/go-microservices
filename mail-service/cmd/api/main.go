@@ -22,7 +22,7 @@ func main() {
 	log.Println("Starting mail service on port", webPort)
 
 	srv := &http.Server{
-		Addr: fmt.Sprintf("%s", webPort),
+		Addr: fmt.Sprintf(":%s", webPort),
 		Handler: app.Routes(),
 	}
 
