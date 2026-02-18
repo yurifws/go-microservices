@@ -18,10 +18,12 @@ go.work
 loggerServiceApp
 brokerApp
 authApp
+mailApp
 frontApp.exe
 authentication-service/authApp
 logger-service/loggerServiceApp
 broker-service/brokerApp
+mail-service/mailApp
 front-end/frontApp.exe
 
 # IDE and Editor files
