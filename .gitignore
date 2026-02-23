@@ -15,12 +15,14 @@ pkg/
 go.work
 
 # Service binaries
+listenerApp
 loggerServiceApp
 brokerApp
 authApp
 mailApp
 frontApp.exe
 authentication-service/authApp
+listener-service/listenerApp
 logger-service/loggerServiceApp
 broker-service/brokerApp
 mail-service/mailApp
