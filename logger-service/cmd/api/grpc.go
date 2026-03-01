@@ -2,8 +2,10 @@ package main
 
 import (
 	"context"
+	"fmt"
 	"log-service/data"
 	"log-service/logs"
+	"net"
 )
 
 type LogServer struct {
@@ -29,4 +31,13 @@ func (l *LogServer) WriteLog(ctx context.Context, req *logs.LogRequest) (*logs.L
 	//return respose
 	res := &logs.LogResponse{Result: "logged!"}
 	return res, nil
+}
+
+func (app *Config) grpcListen() {
+	lis, err := net.Listen("tcp", fmt.Sprintf(":%s", gRpcPort))
+	if err != {
+		log.Fatalf("Failed to listen for gRpc: %v", err)
+	}
+
+	s : grpc.N
 }
