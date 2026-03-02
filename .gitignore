@@ -52,7 +52,6 @@ db-data/
 
 # Logs
 *.log
-logs/
 
 # Temporary files
 tmp/
